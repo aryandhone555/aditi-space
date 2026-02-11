@@ -1,0 +1,129 @@
+/* 🔄 Loader */
+#loader {
+    position: fixed;
+    inset: 0;
+    background: #fff6fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    font-family: 'Pacifico', cursive;
+    color: #ff6fae;
+}
+
+/* 🌸 Global */
+body {
+    margin: 0;
+    font-family: 'Homemade Apple', cursive;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* 🌿 TOP BANNER */
+.top-banner {
+    position: relative;
+    min-height: 260px;
+    padding: 25px 20px 35px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Clock */
+.clock-box h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.2rem;
+    margin: 0;
+    color: white;
+}
+
+.clock-label {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.8);
+}
+
+/* 🌞 / 🌙 Animation */
+.time-animation {
+    margin: 10px auto;
+}
+
+/* Quote */
+.quote-box {
+    background: rgba(255,255,255,0.75);
+    padding: 14px 22px;
+    border-radius: 18px;
+    max-width: 500px;
+    margin: 10px auto;
+    font-style: italic;
+}
+
+.quote-label {
+    display: block;
+    font-size: 0.7rem;
+    color: #ff7aa2;
+    margin-top: 4px;
+}
+
+/* Greeting */
+.greeting-box {
+    margin-top: 10px;
+}
+
+#greeting {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.2rem;
+    margin: 10px 0 0;
+    color: white;
+}
+
+#greetingText {
+    font-size: 1rem;
+    color: #fff;
+    opacity: 0.9;
+}
+
+/* 🌸 MAIN CONTENT (Pink gradient) */
+.main-content {
+    padding: 45px 20px 60px;
+    background: linear-gradient(180deg, #ff78c4, #ffb3dc);
+}
+
+/* Cards layout */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 22px;
+    max-width: 760px;
+    margin: auto;
+}
+
+/* Card */
+.card {
+    background: #fff;
+    border-radius: 24px;
+    padding: 26px 18px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.card h3 {
+    margin: 10px 0 6px;
+    font-weight: 500;
+    font-family: 'Pacifico', cursive;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.04);
+}
+
+/* Emoji */
+.emoji {
+    font-size: 1.8rem;
+}

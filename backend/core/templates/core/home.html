@@ -1,11 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>title</title>
+    <meta charset="UTF-8">
+    <title>Aditi Space</title>
+    {% load static %}
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+
+    <!-- Lottie -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
 </head>
+
 <body>
-    🌸 Aditi Space is alive 🌸
+
+<!-- 🔄 Loader -->
+<div id="loader">
+    <lottie-player
+        src="{% static 'lottie/happy_dog.json' %}"
+        background="transparent"
+        speed="1"
+        style="width: 220px; height: 220px;"
+        loop
+        autoplay>
+    </lottie-player>
+    <p>Loading Aditi Space… 💗</p>
+</div>
+
+<!-- 🌿 TOP BANNER (Green section) -->
+<section class="top-banner" id="topBanner">
+
+    <!-- Clock -->
+    <div class="clock-box">
+        <h1 id="clock">--:--</h1>
+        <span class="clock-label">Clock</span>
+    </div>
+
+    <!-- Sun / Moon Animation -->
+    
+        <div class="time-animation">
+    <div id="timeLottie" style="width:160px;height:160px;"></div>
+</div>
+    </div>
+
+    
+
+    <!-- Greeting -->
+    <div class="greeting-box">
+        <h2 id="greeting">Hi Aditi 💖</h2>
+        <p id="greetingText"></p>
+    </div>
+    
+    <!-- Quote -->
+    <div class="quote-box">
+        <p id="quote">Loading a little magic ✨</p>
+        <span class="quote-label">quote</span>
+    </div>
+</section>
+
+<!-- 🌸 MAIN CONTENT (Pink gradient section) -->
+<section class="main-content" id="mainContent">
+
+    <div class="cards">
+
+        <div class="card">
+            <span class="emoji">🎵</span>
+            <h3>Our Playlist</h3>
+            <p>Songs we love</p>
+        </div>
+
+        <div class="card">
+            <span class="emoji">📝</span>
+            <h3>Notes</h3>
+            <p>Little thoughts</p>
+        </div>
+
+        <div class="card">
+            <span class="emoji">🍽️</span>
+            <h3>Food Orders</h3>
+            <p>For the chef</p>
+        </div>
+
+        <div class="card">
+            <span class="emoji">💌</span>
+            <h3>To the Chef</h3>
+            <p>Say anything</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ✅ Django → JS bridge -->
+<script>
+    const SUN_LOTTIE = "{% static 'lottie/sun.json' %}";
+    const MOON_LOTTIE = "{% static 'lottie/moon.json' %}";
+    const DOG_LOTTIE = "{% static 'lottie/happy_dog.json' %}";
+</script>
+
+<script src="{% static 'js/home.js' %}"></script>
 
 </body>
 </html>
